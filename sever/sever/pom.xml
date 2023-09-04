@@ -11,8 +11,13 @@
 	<groupId>com.zhaoyu</groupId>
 	<artifactId>sever</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>sever</name>
 	<description>Demo project for Spring Boot</description>
+	<modules>
+		<module>boot</module>
+		<module>app</module>
+	</modules>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
