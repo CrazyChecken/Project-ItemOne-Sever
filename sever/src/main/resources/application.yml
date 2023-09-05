@@ -10,3 +10,10 @@
 #  hibernate:
 #    ddl-auto: update
 #    show-sql: true
+database: MYSQL
+hibernate:
+  ddl-auto: update
+show-sql: true
+properties:
+  hibernate:
+    format_sql: true

@@ -1,14 +1,18 @@
 package com.zhaoyu.web;
 
 import org.hibernate.sql.Select;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class BasisController {
-    @RequestMapping("/login")
-    public String login() {
+    @PostMapping("/login")
+    public void login() {
 
-        return "这是登录页面";
+    }
+
+    @PostMapping
+    public void register() {
+
     }
 }
