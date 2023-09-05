@@ -29,6 +29,9 @@ public class User {
     @Comment("密码")
     private String password;
 
+    @Comment("民族")
+    private String ethnic;
+
     @Comment("地址")
     private String address;
 
