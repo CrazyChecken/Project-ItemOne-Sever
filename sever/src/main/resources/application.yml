@@ -1,7 +1,12 @@
-#???????
+#数据源连接信息
 spring:
 datasource:
 username: naraci
 password: 2905821826
 url: jdbc:mysql://112.124.65.228:3306/springboot?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
 driver-class-name: com.mysql.cj.jdbc.Driver
+  
+jpa:
+  hibernate:
+    ddl-auto: update
+    show-sql: true
