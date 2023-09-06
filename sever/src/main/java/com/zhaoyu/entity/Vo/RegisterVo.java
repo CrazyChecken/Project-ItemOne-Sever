@@ -7,7 +7,7 @@ import lombok.Data;
 public class RegisterVo {
     private String msg;
 
-    private User user;
+    private User data;
 
     public RegisterVo() {
     }

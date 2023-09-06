@@ -30,7 +30,7 @@ public class RegisterService {
             userRepo.save(newuser);
             RegisterVo registerVo = new RegisterVo();
             registerVo.setMsg("注册成功");
-            registerVo.setUser(newuser);
+            registerVo.setData(newuser);
             return registerVo;
         }
         RegisterVo registerVo =  new RegisterVo();
