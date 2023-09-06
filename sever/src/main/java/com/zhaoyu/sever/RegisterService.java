@@ -1,11 +1,10 @@
 package com.zhaoyu.sever;
 
-import antlr.StringUtils;
+import com.zhaoyu.basis.Result;
 import com.zhaoyu.domain.User;
 import com.zhaoyu.domain.UserRepo;
-import com.zhaoyu.entity.Vo.RegisterVo;
+import com.zhaoyu.entity.reponse.RegisterVo;
 import com.zhaoyu.mapper.RegisterMapper;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,12 +28,13 @@ public class RegisterService {
             newuser.setAddress(user.getAddress());
             userRepo.save(newuser);
             RegisterVo registerVo = new RegisterVo();
-            registerVo.setMsg("注册成功");
-            registerVo.setData(newuser);
+//            registerVo.setData(newuser);
+            Result result = Result.ok(newuser);
+            registerVo.setData(result);
             return registerVo;
         }
         RegisterVo registerVo =  new RegisterVo();
-        registerVo.setMsg("该手机号已存在");
+        registerVo.setData(Result.fail("该手机号已被注册！"));
         return registerVo;
     }
 }

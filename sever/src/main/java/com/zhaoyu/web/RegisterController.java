@@ -1,8 +1,7 @@
 package com.zhaoyu.web;
 
-import com.zhaoyu.basis.Result;
 import com.zhaoyu.domain.User;
-import com.zhaoyu.entity.Vo.RegisterVo;
+import com.zhaoyu.entity.reponse.RegisterVo;
 import com.zhaoyu.sever.RegisterService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

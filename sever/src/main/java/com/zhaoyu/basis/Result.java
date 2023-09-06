@@ -1,5 +1,6 @@
 package com.zhaoyu.basis;
 
+import com.zhaoyu.domain.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -37,7 +38,7 @@ public class Result {
     }
 
     public static Result ok(Object data) {
-        return new Result(true,"成功",200,System.currentTimeMillis(),data);
+        return new Result(true,"success",200,System.currentTimeMillis(),data);
     }
 
     public static Result ok(List<?> data) {
