@@ -28,7 +28,7 @@ public class RegisterService {
             newuser.setAddress(user.getAddress());
             userRepo.save(newuser);
             RegisterVo registerVo = new RegisterVo();
-//            registerVo.setData(newuser);
+
             Result result = Result.ok(newuser);
             registerVo.setData(result);
             return registerVo;

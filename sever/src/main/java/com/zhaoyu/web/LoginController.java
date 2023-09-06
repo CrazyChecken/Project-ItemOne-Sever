@@ -6,10 +6,12 @@ import com.zhaoyu.entity.request.LoginRequest;
 import com.zhaoyu.sever.LoginService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin
 @Slf4j
 @RestController
 public class LoginController {
