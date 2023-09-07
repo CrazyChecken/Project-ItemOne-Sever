@@ -1,13 +1,16 @@
 package com.zhaoyu.sever;
 
+import com.zhaoyu.basis.PasswordEncrypt;
 import com.zhaoyu.basis.Result;
 import com.zhaoyu.domain.User;
 import com.zhaoyu.domain.UserRepo;
 import com.zhaoyu.entity.reponse.RegisterVo;
 import com.zhaoyu.mapper.RegisterMapper;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+@Slf4j
 @Service
 public class RegisterService {
 
@@ -19,16 +22,19 @@ public class RegisterService {
     public RegisterVo register(User user) {
         User user1 = registerMapper.findByMobile(user.getMobile());
         if (user1 == null) {
+            PasswordEncrypt passwordEncrypt = new PasswordEncrypt();
+            String pwd = passwordEncrypt.MD5(user.getPassword());
             User newuser = new User();
             newuser.setName(user.getName());
             newuser.setMobile(user.getMobile());
-            newuser.setPassword(user.getPassword());
+            newuser.setPassword(pwd);
             newuser.setGender(user.getGender());
             newuser.setEthnic(user.getEthnic());
             newuser.setAddress(user.getAddress());
             userRepo.save(newuser);
             RegisterVo registerVo = new RegisterVo();
 
+            log.info(pwd);
             Result result = Result.ok(newuser);
             registerVo.setData(result);
             return registerVo;
