@@ -22,7 +22,7 @@ public class LoginController {
     public Result login(
             @RequestBody LoginRequest loginEntity) {
         User user =  loginService.login(loginEntity);
-        log.info("提示点{}", loginEntity);
+        log.info("日志：{}", loginEntity);
         return user != null?Result.ok(user):Result.fail("用户名或者密码错误");
     }
 }
