@@ -1,4 +1,4 @@
-package com.zhaoyu.entity.request;
+package com.zhaoyu.entity.BaseModules.request;
 
 import lombok.Data;
 

@@ -1,11 +1,11 @@
-package com.zhaoyu.sever;
+package com.zhaoyu.sever.BaseModules;
 
-import com.zhaoyu.basis.PasswordEncrypt;
-import com.zhaoyu.basis.Result;
-import com.zhaoyu.domain.User;
-import com.zhaoyu.domain.UserRepo;
-import com.zhaoyu.entity.reponse.RegisterVo;
-import com.zhaoyu.mapper.RegisterMapper;
+import com.zhaoyu.basis.BaseModules.PasswordEncrypt;
+import com.zhaoyu.basis.BaseModules.Result;
+import com.zhaoyu.domain.BaseModules.User;
+import com.zhaoyu.domain.BaseModules.UserRepo;
+import com.zhaoyu.entity.BaseModules.reponse.RegisterVo;
+import com.zhaoyu.mapper.BaseModules.RegisterMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

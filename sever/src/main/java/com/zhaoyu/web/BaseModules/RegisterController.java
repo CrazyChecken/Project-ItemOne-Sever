@@ -1,8 +1,8 @@
-package com.zhaoyu.web;
+package com.zhaoyu.web.BaseModules;
 
-import com.zhaoyu.domain.User;
-import com.zhaoyu.entity.reponse.RegisterVo;
-import com.zhaoyu.sever.RegisterService;
+import com.zhaoyu.domain.BaseModules.User;
+import com.zhaoyu.entity.BaseModules.reponse.RegisterVo;
+import com.zhaoyu.sever.BaseModules.RegisterService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;

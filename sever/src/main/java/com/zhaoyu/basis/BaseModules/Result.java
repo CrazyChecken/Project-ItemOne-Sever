@@ -1,6 +1,5 @@
-package com.zhaoyu.basis;
+package com.zhaoyu.basis.BaseModules;
 
-import com.zhaoyu.domain.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

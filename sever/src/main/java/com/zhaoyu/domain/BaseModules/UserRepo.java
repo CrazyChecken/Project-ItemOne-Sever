@@ -1,4 +1,4 @@
-package com.zhaoyu.domain;
+package com.zhaoyu.domain.BaseModules;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

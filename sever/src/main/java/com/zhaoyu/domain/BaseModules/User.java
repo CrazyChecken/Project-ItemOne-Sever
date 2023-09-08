@@ -1,4 +1,4 @@
-package com.zhaoyu.domain;
+package com.zhaoyu.domain.BaseModules;
 
 import lombok.Data;
 import org.hibernate.annotations.Comment;

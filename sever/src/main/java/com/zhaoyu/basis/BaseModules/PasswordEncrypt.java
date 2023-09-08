@@ -1,4 +1,4 @@
-package com.zhaoyu.basis;
+package com.zhaoyu.basis.BaseModules;
 
 import lombok.Data;
 import org.apache.commons.codec.binary.Hex;

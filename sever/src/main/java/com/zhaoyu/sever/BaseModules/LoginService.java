@@ -1,9 +1,9 @@
-package com.zhaoyu.sever;
+package com.zhaoyu.sever.BaseModules;
 
-import com.zhaoyu.basis.PasswordEncrypt;
-import com.zhaoyu.domain.User;
-import com.zhaoyu.entity.request.LoginRequest;
-import com.zhaoyu.mapper.LoginMapper;
+import com.zhaoyu.basis.BaseModules.PasswordEncrypt;
+import com.zhaoyu.domain.BaseModules.User;
+import com.zhaoyu.entity.BaseModules.request.LoginRequest;
+import com.zhaoyu.mapper.BaseModules.LoginMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

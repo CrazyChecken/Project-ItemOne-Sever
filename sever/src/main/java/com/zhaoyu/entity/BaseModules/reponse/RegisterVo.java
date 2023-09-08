@@ -1,7 +1,6 @@
-package com.zhaoyu.entity.reponse;
+package com.zhaoyu.entity.BaseModules.reponse;
 
-import com.zhaoyu.basis.Result;
-import com.zhaoyu.domain.User;
+import com.zhaoyu.basis.BaseModules.Result;
 import lombok.Data;
 
 @Data

@@ -1,7 +1,7 @@
-package com.zhaoyu.mapper;
+package com.zhaoyu.mapper.BaseModules;
 
-import com.zhaoyu.domain.User;
-import com.zhaoyu.entity.request.LoginRequest;
+import com.zhaoyu.domain.BaseModules.User;
+import com.zhaoyu.entity.BaseModules.request.LoginRequest;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
