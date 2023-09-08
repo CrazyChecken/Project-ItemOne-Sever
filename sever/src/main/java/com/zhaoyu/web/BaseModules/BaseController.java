@@ -34,7 +34,15 @@ public class BaseController {
     public RegisterVo register(
             @RequestBody User user
     ) {
-        RegisterVo registerVo =  registerService.register(user);
-        return registerVo;
+        return registerService.register(user);
+    }
+
+    /***
+     * 修改用户密码
+     */
+    @PostMapping("/edit")
+    public void editPassword(
+    ) {
+
     }
 }
